@@ -1,0 +1,30 @@
+# External Dependencies (not pip-installable):
+# 1. Ollama - Install from https://ollama.ai
+#    - Required version: >= 0.1.29
+#    - Run: curl -fsSL https://ollama.ai/install.sh | sh
+#
+# 2. LLM Model - Install using Ollama
+#    - Required model: deepseek-r1:14b
+#    - Install with: ollama pull deepseek-r1:14b
+#    - Ensure Ollama is running: ollama serve
+#
+# Core dependencies
+playwright==1.42.0
+aiohttp==3.9.3
+asyncio==3.4.3
+
+# Playwright dependencies
+greenlet>=2.0.2
+pyee>=11.0.1
+typing-extensions>=4.5.0
+
+# aiohttp dependencies
+attrs>=23.1.0
+multidict>=6.0.4
+yarl>=1.9.3
+aiosignal>=1.3.1
+frozenlist>=1.4.1
+async-timeout>=4.0.3
+
+# Logging and formatting
+colorama>=0.4.6  # For Windows ANSI color support 
